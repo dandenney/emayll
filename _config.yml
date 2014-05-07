@@ -1,0 +1,18 @@
+# Site settings
+name: emayll
+title: HTML emails all up in Haml
+email: dand@envylabs.com
+description: "Build your HTML emails in Haml and organize them with Jekyll."
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
+
+# Collections
+collections:
+  transactional:
+    output: true
+  promotional:
+    output: true

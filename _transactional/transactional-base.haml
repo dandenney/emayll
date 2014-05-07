@@ -1,0 +1,42 @@
+---
+layout: email
+title:  "A Transactional Email"
+categories: transactional
+service: ""
+status: ""
+purpose: ""
+
+table--base: "border: '0', cellpadding: '0', cellspacing: '0'"
+table--typeset: "font-family: 'Open Sans', AppleSDGothicNeo-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4;"
+color--bg: "f7f7f7"
+color--base: "636365"
+color--link: "228b9b"
+color--title: "3f4944"
+gutter: "20"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+/ =====================================
+/   Email Content
+/ =====================================
+
+%table{ style: "{{ page.table--typeset }}", {{ post.table--base }} }
+  %tr
+    %td
+      {{ page.title }}
+      {{ page.categories }}
+      {{ page.service }}
+      {{ page.status }}
+      {{ page.purpose }}
+      {{ page.color--bg }}
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+{% include email-footer.haml %}

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1>Emails</h1>
+
+  <ul class="emails">
+    {% for post in site.transactional %}
+      <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="emails">
+    {% for post in site.promotional %}
+      <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
