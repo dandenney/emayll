@@ -12,7 +12,9 @@ permalinks: pretty
 
 # Collections
 collections:
-  transactional:
+  patterns:
     output: true
   promotional:
+    output: true
+  transactional:
     output: true

@@ -1,0 +1,396 @@
+---
+layout: email
+title:  "Global Patterns"
+categories: promotional
+service: "Service Name"
+status: "Status"
+purpose: "The patterns that are used in nearly every email."
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#fefefe"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#fefefe"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;"
+c-bg: "#f7f7f7"
+c-base: "#252525"
+c-link: "#228b9b"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+/ =====================================
+/   Content Container
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+  %tr
+    %td
+
+      / =====================================
+      /   Content
+      / =====================================
+
+      %h1{ style: "{{ page.c-title }} font-size: 22px; margin: 0; padding-bottom: 5px;" } Header Level 1
+
+      %h2{ style: "{{ page.c-title }} font-size: 20px; margin: 0; padding-bottom: 5px;" } Header Level 2
+
+      %h3{ style: "{{ page.c-title }} font-size: 18px; margin: 0; padding-bottom: 5px;" } Header Level 3
+
+      %h4{ style: "{{ page.c-title }} font-size: 16px; margin: 0; padding-bottom: 5px;" } Header Level 4
+
+      %h5{ style: "{{ page.c-title }} font-size: 14px; margin: 0; padding-bottom: 5px;" } Header Level 5
+
+      %a{ href: "#", style: "{{ page.c-link }} font-weight: bold;" } Donec non enim
+
+      %img{ alt: "", src: "", width: "" }/
+
+
+
+/ ==========================================================================
+
+
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Content
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "560" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "5" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
+
+      Here is some information about it and then after that there is a button for you to click to find out more and do something.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      / =====================================
+      /   Button
+      / =====================================
+
+      %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+        %tr
+          %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
+            %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Thanks,
+      %br
+      Emayll
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+
+
+/ ==========================================================================
+
+
+
+/ =====================================
+/   Full Container
+/ =====================================
+
+%table{ bgcolor: "#f7f7f7", width: "100%", {{ page.tbl-base}} }
+  %tr
+    %td{ align: "center" }
+
+      / =====================================
+      /   Content Name Container
+      / =====================================
+
+      %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        / =====================================
+        /   Content
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "560" }
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "5" }
+
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h1{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
+
+            Here is some information about it and then after that there is a button for you to click to find out more and do something.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "15" }
+
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            / =====================================
+            /   Button
+            / =====================================
+
+            %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+              %tr
+                %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
+                  %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "15" }
+
+        / =====================================
+        /   Closing
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            Thanks,
+            %br
+            Emayll
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+/ ==========================================================================
+
+
+/ =====================================
+/   Split Container
+/ =====================================
+%table.flex-size{ width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Split
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      / =====================================
+      /   First Content Wrapper
+      / =====================================
+
+      %table.flex--size{ align: "left", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+        %tr
+          %td
+
+            / =====================================
+            /   Content Name
+            / =====================================
+
+            %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "260", {{ page.table-base}} }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "25" }
+
+              / =====================================
+              /   Content
+              / =====================================
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "260" }
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "5" }
+
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  %h3{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
+
+                  Here is some information about it and then after that there is a button for you to click to find out more and do something.
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "15" }
+
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  / =====================================
+                  /   Button
+                  / =====================================
+
+                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+                    %tr
+                      %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
+                        %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "25" }
+
+      / =====================================
+      /   Second Content Wrapper
+      / =====================================
+
+      %table.flex--size{ align: "right", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+        %tr
+          %td
+
+            / =====================================
+            /   Content Name
+            / =====================================
+
+            %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "260", {{ page.table-base}} }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "25" }
+
+              / =====================================
+              /   Content
+              / =====================================
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "260" }
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "5" }
+
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  %h3{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
+
+                  Here is some information about it and then after that there is a button for you to click to find out more and do something.
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "15" }
+
+              %tr
+                %td{ width: "{{ page.gutter }}" }
+                %td{ align: "left" }
+
+                  / =====================================
+                  /   Button
+                  / =====================================
+
+                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+                    %tr
+                      %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
+                        %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
+
+                %td{ width: "{{ page.gutter }}" }
+
+              / Spacer
+              %tr
+                %td{ colspan: "3", height: "25" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}

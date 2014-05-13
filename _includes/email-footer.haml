@@ -1,1 +1,32 @@
-/ Email Footer
+/ =====================================
+/   Footer Container
+/ =====================================
+
+%table{ bgcolor: "{{ page.ftr-c-bg }}", style: "{{ page.ftr-border }}", width: "100%", {{ page.table-base }} }
+  %tr
+    %td
+
+      / =====================================
+      /   Footer Content
+      / =====================================
+
+      %table.flex-size{ align: "center", style: "color: {{ page.ftr-c-base }}; {{ page.tbl-typeset }} font-size: 14px;", width: "600", {{ page.table-base }} }
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+
+            %a{ href: "#", style: "color: {{ page.ftr-c-link }}" }
+              Unsubscribe
+
+          %td{ width: "{{ page.gutter }}" }
+
+        %tr
+          %td{ colspan: "3" }
+
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "center" }
+
+            123 Mandatory Street, Orlando, FL 32801
+
+          %td{ width: "{{ page.gutter }}" }

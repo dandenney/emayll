@@ -7,6 +7,24 @@ layout: default
   <h1>Emails</h1>
 
   <!-- ===================================== -->
+  <!-- List of Styleguides -->
+  <!-- ===================================== -->
+
+  <ul class="emails">
+    {% for post in site.patterns %}
+      <li>
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+        <ul>
+          <li>{{ post.categories }}</li>
+          <li>{{ post.service }}</li>
+          <li>{{ post.status }}</li>
+          <li>{{ post.purpose }}</li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- ===================================== -->
   <!-- List of Transactional Emails -->
   <!-- ===================================== -->
 
