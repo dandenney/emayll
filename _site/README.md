@@ -49,9 +49,9 @@ By default, emails are organized into promotional and transactional categories. 
 
 | File | Purpose |
 | ------------- | ----------- |
-| style.css | The global CSS that needs to be included in the head, primarily media queries. It's an include so that it is output into the the HTML file for each email. |
-| email-header.haml | HTML for the header of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-header.haml and mandrill-header.haml |
-| email-footer.haml | HTML for the footer of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-footer.haml and mandrill-footer.haml |
+| style.css                           | The global CSS that needs to be included in the head, primarily media queries. It's an include so that it is output into the the HTML file for each email. |
+| email-header.haml                   | HTML for the header of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-header.haml and mandrill-header.haml |
+| email-footer.haml                   | HTML for the footer of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-footer.haml and mandrill-footer.haml |
 | head.html, header.html, footer.html | Will these stay? Review after styling can be done. |
 
 ### Emails
