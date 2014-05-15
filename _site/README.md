@@ -40,25 +40,19 @@ By default, emails are organized into promotional and transactional categories. 
 
 ### Layouts
 
-#### default.html
-The HTML structure for the landing page of emayll.
-
-#### email.html
-The basic structure for every email you send. Things like doctype, html, body, etc. Code that may change per email are put into includes.
+| File | Purpose |
+| ------------- | ----------- |
+| default.html | The HTML structure for the landing page of emayll. |
+| email.html | The basic structure for every email you send. Things like doctype, html, body, etc. Code that may change per email are put into includes. |
 
 ### Includes
 
-#### style.css
-The global CSS that needs to be included in the head, primarily media queries. It's an include so that it is output into the the HTML file for each email.
-
-#### email-header.haml
-HTML for the header of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-header.haml and mandrill-header.haml
-
-#### email-footer.haml
-HTML for the footer of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-footer.haml and mandrill-footer.haml
-
-#### head.html, header.html, footer.html
-Will these stay? Review after styling can be done.
+| File | Purpose |
+| ------------- | ----------- |
+| style.css | The global CSS that needs to be included in the head, primarily media queries. It's an include so that it is output into the the HTML file for each email. |
+| email-header.haml | HTML for the header of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-header.haml and mandrill-header.haml |
+| email-footer.haml | HTML for the footer of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-footer.haml and mandrill-footer.haml |
+| head.html, header.html, footer.html | Will these stay? Review after styling can be done. |
 
 ### Emails
 Each email is a Haml file in a collections folder. The folders initially set up are **_promotional** and **_transactional**. Haml files that are saved in those folders will be output as HTML every time that the build runs.
@@ -66,76 +60,34 @@ Each email is a Haml file in a collections folder. The folders initially set up 
 ### YAML Front Matter
 Front matter is used to set information about an email, to control its layout, and to use variables for repeated code and values.
 
-- ``` layout ```
-Sets the layout, which needs to be a file in the _layouts folder.
-
-- ``` title ```
-Sets the title of the email for displaying in emayll
-
-- ``` categories ```
-Sets the categories used for filtering in emayll
-
-``` service ```
-Displays the service being used for sent as meta information in emayll
-
-``` status ```
-Displays the status of the email as meta information in emayll. Requires manual configuration for anything beyond the default: inactive, active, retired
-
-``` purpose ```
-Displays the purpose of the email as meta information in emayll
+| Name | Purpose |
+| ------------- | ----------- |
+| ``` layout ```     | Sets the layout, which needs to be a file in the _layouts folder. |
+| ``` title ```      | Sets the title of the email for displaying in emayll |
+| ``` categories ``` | Sets the categories used for filtering in emayll |
+| ``` service ``` | Displays the service being used for sent as meta information in emayll |
+| ``` status ``` | Displays the status of the email as meta information in emayll. Requires manual configuration for anything beyond the default: inactive, active, retired |
+| ``` Purpose ``` | Displays the purpose of the email as meta information in emayll |
 
 The following are style defaults and will work only if the calls for them are used in a file. They allow for rapidly changing the look of an individual email.
 
-``` hdr-c-base ```
-Sets the base text color for the header table
-
-``` hdr-c-bg ```
-Sets the base background color for the header table
-
-``` hdr-c-link ```
-Sets the base link color for the header table
-
-``` hdr-border ```
-Sets the CSS for a border for the header. Defaults to having one and can be overridden in an individual email by changing to ```border-bottom: 0;```
-
-``` ftr-c-base ```
-Sets the base text color for the footer table
-
-``` ftr-c-bg ```
-Sets the base background color for the footer table
-
-``` ftr-c-link ```
-Sets the base link color for the footer table
-
-``` ftr-border ```
-Sets the CSS for a border for the footer table. Defaults to having one and can be overridden in an individual email by changing to ```border-bottom: 0;```
-
-``` tbl-base ```
-Sets base HTML attributes that need to be on every table. Used to reduce code a bit.
-
-``` tbl-typeset ```
-Sets the base font stack, size, and line-height in any table with ```{{ page.tbl-typeset }}``` in the style tag. Used to reduce code.
-
-``` c-bg ```
-Sets the background color of the primary container table in the layout, setting the background color of the email.
-
-``` c-base ```
-Sets the font color for all tables containing ```{{ page.c-base }}``` as a CSS color.
-
-``` c-link ```
-Sets the color for all links containing ```{{ page.c-link }}``` as a CSS color.
-
-``` c-title ```
-Sets the color for any title containing ```{{ page.c-title }}``` as a CSS color.
-
-``` gutter ```
-Sets the pixel width of spacer cells, which are used to keep content off the edges in clients. It was created after Mailbox app changed their rendering, but also fixes issues with Gmail at smaller resolutions.
-
-``` btn-c-base ```
-Sets the font color for button tables containing ```{{ page.btn-c-base }}``` as a CSS color.
-
-``` btn-c-bg ```
-Sets the background color for button tables containing ```{{ page.btn-c-bg }}``` as a CSS color.
-
-``` btn-c-shadow ```
-Sets the shadow color for button tables containing ```{{ page.btn-c-shadow }}``` as a CSS color.
+| Name | Purpose |
+| ------------- | ----------- |
+| ``` hdr-c-base ``` | Sets the base text color for the header table |
+| ``` hdr-c-bg ``` | Sets the base background color for the header table |
+| ``` hdr-c-link ``` | Sets the base link color for the header table |
+| ``` hdr-border ``` | Sets the CSS for a border for the header. Defaults to having one and can be overridden in an individual email by changing to ```border-bottom: 0;``` |
+| ``` ftr-c-base ``` | Sets the base text color for the footer table |
+| ``` ftr-c-bg ``` | Sets the base background color for the footer table |
+| ``` ftr-c-link ``` | Sets the base link color for the footer table |
+| ``` ftr-border ``` | Sets the CSS for a border for the footer table. Defaults to having one and can be overridden in an individual email by changing to ```border-bottom: 0;``` |
+| ``` tbl-base ``` | Sets base HTML attributes that need to be on every table. Used to reduce code a bit. |
+| ``` tbl-typeset ``` | Sets the base font stack, size, and line-height in any table with ```{{ page.tbl-typeset }}``` in the style tag. Used to reduce code. |
+| ``` c-bg ``` | Sets the background color of the primary container table in the layout, setting the background color of the email. |
+| ``` c-base ``` | Sets the font color for all tables containing ```{{ page.c-base }}``` as a CSS color. |
+| ``` c-link ``` | Sets the color for all links containing ```{{ page.c-link }}``` as a CSS color. |
+| ``` c-title ``` | Sets the color for any title containing ```{{ page.c-title }}``` as a CSS color. |
+| ``` gutter ``` | Sets the pixel width of spacer cells, which are used to keep content off the edges in clients. It was created after Mailbox app changed their rendering, but also fixes issues with Gmail at smaller resolutions. |
+| ``` btn-c-base ``` | Sets the font color for button tables containing ```{{ page.btn-c-base }}``` as a CSS color. |
+| ``` btn-c-bg ``` | Sets the background color for button tables containing ```{{ page.btn-c-bg }}``` as a CSS color. |
+| ``` btn-c-shadow ``` | Sets the shadow color for button tables containing ```{{ page.btn-c-shadow }}``` as a CSS color. |
