@@ -47,8 +47,8 @@ By default, emails are organized into promotional and transactional categories. 
 
 ### Includes
 
-| File | Purpose |
-| ------------- | ----------- |
+| File                                | Purpose |
+| ----------------------------------- | ----------- |
 | style.css                           | The global CSS that needs to be included in the head, primarily media queries. It's an include so that it is output into the the HTML file for each email. |
 | email-header.haml                   | HTML for the header of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-header.haml and mandrill-header.haml |
 | email-footer.haml                   | HTML for the footer of a group of emails. If you have multiple types of headers, create more. An example may be mailchimp-footer.haml and mandrill-footer.haml |
@@ -72,7 +72,7 @@ Front matter is used to set information about an email, to control its layout, a
 The following are style defaults and will work only if the calls for them are used in a file. They allow for rapidly changing the look of an individual email.
 
 | Name | Purpose |
-| ------------- | ----------- |
+| ------------------ | ----------- |
 | ``` hdr-c-base ``` | Sets the base text color for the header table |
 | ``` hdr-c-bg ``` | Sets the base background color for the header table |
 | ``` hdr-c-link ``` | Sets the base link color for the header table |
