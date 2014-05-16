@@ -52,3 +52,11 @@ a {
 .status--retired {
   color: #c91432;
 }
+
+/* Toggle */
+
+.icn-toggle {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+}
