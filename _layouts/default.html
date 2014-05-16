@@ -12,6 +12,18 @@
 
     {% include footer.html %}
 
+    <script src="{{ "/js/jquery-2.1.1.min.js" | prepend: site.baseurl }}"></script>
+
+    <script src="{{ "/js/tablesorter.min.js" | prepend: site.baseurl }}"></script>
+
+    <script>
+
+      $(function(){
+        $("#emaylls").tablesorter();
+      });
+
+    </script>
+
   </body>
 
 </html>

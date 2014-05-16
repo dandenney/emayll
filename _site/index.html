@@ -11,7 +11,7 @@
     <link rel="canonical" href="/">
 
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="/css/app.css"> -->
+    <link rel="stylesheet" href="/sass/app.css">
 
 </head>
 
@@ -23,67 +23,71 @@
 
     <div class="home">
 
-  <h1>Emails</h1>
+  <h1><img alt="Emayll" src="/images/logo--site.png" width="150" /></h1>
+
 
   <!-- ===================================== -->
-  <!-- List of Styleguides -->
+  <!-- List of All Emails -->
   <!-- ===================================== -->
 
-  <ul class="emails">
-    
-      <li>
-        <h3><a class="post-link" href="/patterns/global.html">Global Patterns</a></h3>
-        <ul>
-          <li>promotional</li>
-          <li>Service Name</li>
-          <li>Status</li>
-          <li>The patterns that are used in nearly every email.</li>
-        </ul>
-      </li>
-    
-  </ul>
-
-  <!-- ===================================== -->
-  <!-- List of Transactional Emails -->
-  <!-- ===================================== -->
-
-  <ul class="emails">
-    
-      <li>
-        <h3><a class="post-link" href="/transactional/transactional-base.html">A Transactional Email</a></h3>
-        <ul>
-          <li>transactional</li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </li>
-    
-  </ul>
-
-  <!-- ===================================== -->
-  <!-- List of Promotional Emails -->
-  <!-- ===================================== -->
-
-  <ul class="emails">
-    
-      <li>
-        <h3><a class="post-link" href="/promotional/promotional-base.html">A Promotional Email</a></h3>
-        <ul>
-          <li>promotional</li>
-          <li>Service Name</li>
-          <li>Status</li>
-          <li>This is the purpose of the email. It could be long or it could be short.</li>
-        </ul>
-      </li>
-    
-  </ul>
+  <table border="0" cellspacing="0" cellpadding="10" id="emaylls">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Categories</th>
+        <th>Status</th>
+        <th>Services</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td><a class="post-link" href="/patterns/global.html">Global Patterns</a></h3></td>
+          <td class="categories">patterns</td>
+          <td class="status status--active">active</td>
+          <td class="service service--servicename">servicename</td>
+          <td class="purpose">The patterns that are used in nearly every email.</td>
+        </tr>
+      
+      
+        <tr>
+          <td><a class="post-link" href="/transactional/transactional-base.html">A Transactional Email</a></h3></td>
+          <td class="categories">transactional</td>
+          <td class="status status--inactive">inactive</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">A base starter file for promotional emails.</td>
+        </tr>
+      
+      
+        <tr>
+          <td><a class="post-link" href="/promotional/promotional-base.html">A Promotional Email</a></h3></td>
+          <td class="categories">promotional</td>
+          <td class="status status--inactive">inactive</td>
+          <td class="service service--none">none</td>
+          <td class="purpose">A base starter file for transactional emails.</td>
+        </tr>
+      
+    </tbody>
+  </table>
 
 </div>
 
 
     <!-- <footer></footer> -->
 
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+
+    <script src="/js/tablesorter.min.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#emaylls").tablesorter();
+      });
+
+    </script>
 
   </body>
 

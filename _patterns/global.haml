@@ -1,24 +1,24 @@
 ---
 layout: email
 title:  "Global Patterns"
-categories: promotional
-service: "Service Name"
-status: "Status"
+categories: patterns
+service: "servicename"
+status: "active"
 purpose: "The patterns that are used in nearly every email."
 
 hdr-c-base: "#37a381"
-hdr-c-bg: "#fefefe"
+hdr-c-bg: "#f7f7f7"
 hdr-c-link: "#0b684d"
 hdr-border: "border-bottom: 1px solid #f5f5f5;"
 
 ftr-c-base: "#d4d4d4"
-ftr-c-bg: "#fefefe"
+ftr-c-bg: "#f7f7f7"
 ftr-c-link: "#a1a1a1"
 ftr-border: "border-top: 1px solid #f5f5f5;"
 
 tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
 tbl-typeset: "font-family: Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;"
-c-bg: "#f7f7f7"
+c-bg: "#fefefe"
 c-base: "#252525"
 c-link: "#228b9b"
 c-title: "#3f4944"
@@ -39,8 +39,14 @@ btn-c-shadow: "#777777"
 /   Content Container
 / =====================================
 
-%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
   %tr
+    %td{ colspan: "3", height: "25" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
     %td
 
       / =====================================
@@ -61,6 +67,12 @@ btn-c-shadow: "#777777"
 
       %img{ alt: "", src: "", width: "" }/
 
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
 
 
 / ==========================================================================
@@ -71,7 +83,7 @@ btn-c-shadow: "#777777"
 /   Content Name
 / =====================================
 
-%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
 
   / Spacer
   %tr
@@ -84,7 +96,7 @@ btn-c-shadow: "#777777"
     %td{ width: "{{ page.gutter }}" }
     %td{ align: "left" }
 
-      %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "560" }
+      %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "560" }
 
     %td{ width: "{{ page.gutter }}" }
 
@@ -114,7 +126,7 @@ btn-c-shadow: "#777777"
       /   Button
       / =====================================
 
-      %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+      %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
         %tr
           %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
             %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
@@ -160,7 +172,7 @@ btn-c-shadow: "#777777"
       /   Content Name Container
       / =====================================
 
-      %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.table-base}} }
+      %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
 
         / Spacer
         %tr
@@ -173,7 +185,7 @@ btn-c-shadow: "#777777"
           %td{ width: "{{ page.gutter }}" }
           %td{ align: "left" }
 
-            %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "560" }
+            %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "560" }
 
           %td{ width: "{{ page.gutter }}" }
 
@@ -203,7 +215,7 @@ btn-c-shadow: "#777777"
             /   Button
             / =====================================
 
-            %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+            %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
               %tr
                 %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
                   %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
@@ -262,7 +274,7 @@ btn-c-shadow: "#777777"
             /   Content Name
             / =====================================
 
-            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.table-base}} }
+            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
 
               / Spacer
               %tr
@@ -275,7 +287,7 @@ btn-c-shadow: "#777777"
                 %td{ width: "{{ page.gutter }}" }
                 %td{ align: "left" }
 
-                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "260" }
+                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "260" }
 
                 %td{ width: "{{ page.gutter }}" }
 
@@ -305,7 +317,7 @@ btn-c-shadow: "#777777"
                   /   Button
                   / =====================================
 
-                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
                     %tr
                       %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
                         %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
@@ -328,7 +340,7 @@ btn-c-shadow: "#777777"
             /   Content Name
             / =====================================
 
-            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.table-base}} }
+            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
 
               / Spacer
               %tr
@@ -341,7 +353,7 @@ btn-c-shadow: "#777777"
                 %td{ width: "{{ page.gutter }}" }
                 %td{ align: "left" }
 
-                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/from-me-to-you.gif", style: "display: block;", width: "260" }
+                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "260" }
 
                 %td{ width: "{{ page.gutter }}" }
 
@@ -371,7 +383,7 @@ btn-c-shadow: "#777777"
                   /   Button
                   / =====================================
 
-                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.table-base }} }
+                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
                     %tr
                       %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
                         %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
