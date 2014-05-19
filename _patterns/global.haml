@@ -5,6 +5,7 @@ categories: patterns
 service: "servicename"
 status: "active"
 purpose: "The patterns that are used in nearly every email."
+tracker: ?utm_medium=email&utm_campaign=NAME_OF_THIS_THING_NOT_IN_CAPS&utm_source=mandrill&utm_content=null
 
 hdr-c-base: "#37a381"
 hdr-c-bg: "#f7f7f7"
@@ -270,63 +271,7 @@ btn-c-shadow: "#777777"
         %tr
           %td
 
-            / =====================================
-            /   Content Name
-            / =====================================
-
-            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "25" }
-
-              / =====================================
-              /   Content
-              / =====================================
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "260" }
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "5" }
-
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  %h3{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
-
-                  Here is some information about it and then after that there is a button for you to click to find out more and do something.
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "15" }
-
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  / =====================================
-                  /   Button
-                  / =====================================
-
-                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
-                    %tr
-                      %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
-                        %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "25" }
+            Split First
 
       / =====================================
       /   Second Content Wrapper
@@ -336,63 +281,7 @@ btn-c-shadow: "#777777"
         %tr
           %td
 
-            / =====================================
-            /   Content Name
-            / =====================================
-
-            %table{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "100%", {{ page.tbl-base}} }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "25" }
-
-              / =====================================
-              /   Content
-              / =====================================
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  %img{ alt: "cinemagraph named from me to you by Ann Street Studio", src: "/images/placeholder-rectangle.png", style: "display: block;", width: "260" }
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "5" }
-
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  %h3{ style: "margin: 0; padding-bottom: 5px;" } This is a thing that exists
-
-                  Here is some information about it and then after that there is a button for you to click to find out more and do something.
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "15" }
-
-              %tr
-                %td{ width: "{{ page.gutter }}" }
-                %td{ align: "left" }
-
-                  / =====================================
-                  /   Button
-                  / =====================================
-
-                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
-                    %tr
-                      %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
-                        %a{ href: "#", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; font-weight: bold; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Do Something
-
-                %td{ width: "{{ page.gutter }}" }
-
-              / Spacer
-              %tr
-                %td{ colspan: "3", height: "25" }
+            Split Second
 
     %td{ width: "{{ page.gutter }}" }
 
