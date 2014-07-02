@@ -1,0 +1,185 @@
+---
+layout: email
+title:  "One Week Away"
+categories: promotional
+service: "mailchimp"
+status: "active"
+purpose: "A base starter file for transactional emails."
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f5f5f5"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+%style
+  a { color: #b51f24 !important; }
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / =====================================
+  /   Florida
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "Illustration of map with Florida", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/event_florida.png", width: "580" }/
+
+    %td{ width: "{{ page.gutter }}" }
+
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "margin: 0; padding-bottom: 5px;" } Next Week!
+
+      It's almost here and we just wanted to check in on a few things. If you have suggestions or questions, please just reply to this. I'll follow up on Monday with another email, put them on the site, and get everyone a link to the Gather app.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Party Alternatives
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 24px; margin: 0; padding-bottom: 5px;" } Thursday Night Meetup Suggestions?
+
+      We know it's great to get to meet some of your fellow attendees before the conference. We can't attend because of last-minute organizing, but if someone wants to claim a spot we will share it with everyone.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /   Suggestions
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Last year, people gathered at
+      %a{ href: "https://www.google.com/maps/place/Five+Bucks+Drinkery/@27.771337,-82.636428,19z/data=!3m1!4b1!4m2!3m1!1s0x88c2e19cbf40ce4d:0xbbaa4c6a7bdd44dd", style: "color: {{ page.c-link }}; font-weight: bold;" } Five Bucks
+      for cheap food and drinks with some space. A couple of doors down, people gathered at
+      %a{ href: "https://www.google.com/maps/place/Mandarin+Hide/@27.771337,-82.636428,19z/data=!4m7!1m4!3m3!1s0x88c2e19cbf40ce4d:0xbbaa4c6a7bdd44dd!2sFive+Bucks+Drinkery!3b1!3m1!1s0x0:0xa5cfddda9ba3a", style: "color: {{ page.c-link }}; font-weight: bold;" } Mandarin Hide
+      for a little more top shelf fun.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Party Alternatives
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 24px; margin: 0; padding-bottom: 5px;" } Friday Party Alternatives?
+
+      We know that not everyone is into the bar thing, but it's the most reliable place to put 300ish people after hours. If you'd like to head up some alternative hangouts for Friday night, please let me know.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /   Suggestions
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      The
+      %a{ href: "http://tampabay.rays.mlb.com/schedule/?c_id=tb#y=2014&m=7&calendar=DEFAULT", style: "color: {{ page.c-link }}; font-weight: bold;" } Rays
+      are playing against the Blue Jays at 7:10 not too far away. There is a movie theater right downtown. You can check out the
+      %a{ href: "http://www.movieinsider.com/movies/july/2014/11/", style: "color: {{ page.c-link }}; font-weight: bold;" } new releases
+      for July 11.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 24px; margin: 0; padding-bottom: 5px;" } Schedule on the site
+
+      The *final* schedule is up on the
+      <a href="http://frontenddesignconference.com/st-pete" style="color: {{ page.c-link }}; font-weight: bold;">site</a>. We'll stick to that as best as we can and just a reminder that both days are at the Palladium Theater this year.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      See you next week!
+      %br
+      Dan
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
