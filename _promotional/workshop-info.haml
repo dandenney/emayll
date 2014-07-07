@@ -1,0 +1,227 @@
+---
+layout: email
+title:  "Workshop Info"
+categories: promotional
+service: "mailchimp"
+status: "draft"
+purpose: "Info for the workshop"
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#fefefe"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#ac554d"
+c-base: "#232325"
+c-link: "#b51f24"
+c-title: "#000000"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+%style
+  a { color: #b51f24 !important; }
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Florida
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "center" }
+
+      %img{ alt: "Frontend Tooling", src: "http://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/33ec052d-a3e5-4197-804f-f4fd543e1f53.png", width: "120" }/
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+/ =====================================
+/   Full Container
+/ =====================================
+
+%table{ bgcolor: "#e3ded5", width: "100%", {{ page.tbl-base}} }
+
+  %tr
+    %td{ align: "center" }
+
+      / =====================================
+      /
+      / =====================================
+
+      %table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h1{ style: "color: {{ page.c-title }}; font-size: 22px; margin: 0; padding-bottom: 5px;" } Frontend Tooling Workshop
+
+            We're excited for next week's workshop, where Neil and Rob will share their take on modern development processes and tools. The workshop will be at the Hilton downtown.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / =====================================
+        /   Map
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            / =====================================
+            /   Split Container
+            / =====================================
+            %table.flex-size{ width: "560", {{ page.tbl-base}} }
+
+              / =====================================
+              /   Split
+              / =====================================
+              %tr
+                %td{ align: "left" }
+
+                  / =====================================
+                  /   First Content Wrapper
+                  / =====================================
+
+                  %table.flex-size{ align: "left", style: "{{ page.tbl-typeset }}", width: "270", {{ page.tbl-base}} }
+
+                    / Spacer
+                    %tr
+                      %td{ height: "25" }
+
+                    %tr
+                      %td
+
+                        %img{ alt: "map of Hilton", src: "http://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/3cc98770-1d3f-4f42-99e9-ae8eb53a881c.png", width: "260" }/
+
+                  / =====================================
+                  /   Second Content Wrapper
+                  / =====================================
+
+                  %table.flex-size{ align: "right", style: "{{ page.tbl-typeset }}", width: "270", {{ page.tbl-base}} }
+
+                    / Spacer
+                    %tr
+                      %td{ height: "25" }
+
+                    %tr
+                      %td
+
+                        %h3{ style: "color: {{ page.c-title }}; font-size: 16px; margin: 0; padding-bottom: 5px;" } Hilton St. Petersburg Bayfront
+
+                        %a{ href: "https://www.google.com/maps/place/Hilton+St.+Petersburg+Bayfront/@27.767988,-82.634753,17z/data=!3m1!4b1!4m2!3m1!1s0x88c2e19ba0c74595:0xdb5c081baf18ff83", style: "color: {{ page.c-link }};" }
+                          333 1st St S
+                          %br
+                          St Petersburg, FL 33701
+
+              / Spacer
+              %tr
+                %td{ height: "25" }
+
+          %td{ width: "{{ page.gutter }}" }
+
+
+        / =====================================
+        /   Party Alternatives
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } The Plan
+
+            Registration begins at <strong>8:30am</strong>, the fun begins at <strong>9</strong>. There will be table seating, with power. While there won't be hands-on coding, you'll want your laptops for pulling repos, checking out sites, and possibly some of the apps that you'll see throughout the day.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        / =====================================
+        /   Party Alternatives
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } Food and Drinks
+
+            There will be small food items available at all of the breaks as well as a light lunch. Breakfast will be muffins, breads, breakfast sandwiches. Breaks will have fruit and various yummies. Lunch will be a Florida Cobb salad with chicken. There are some great <a href="https://www.google.com/maps/search/restaurants/@27.767988,-82.634753,17z/data=!3m1!4b1!4m5!2m4!3m3!1srestaurants!2sHilton+St.+Petersburg+Bayfront,+333+1st+St+S,+St+Petersburg,+FL+33701!3s0x88c2e19ba0c74595:0xdb5c081baf18ff83">restaurants</a> within walking distance as well.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        / =====================================
+        /   Questions
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } Questions?
+
+            If you have any questions, please just reply with them.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+        / =====================================
+        /   Closing
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            See you next week!
+            %br
+            Dan
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
