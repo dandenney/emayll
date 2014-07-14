@@ -82,13 +82,35 @@ btn-c-shadow: "#777777"
         %tr
           %td{ colspan: "3", height: "25" }
 
+        / =====================================
+        /   Parking
+        / =====================================
+        %tr
+          %td{ width: "{{ page.gutter }}" }
+          %td{ align: "left" }
+
+            %h1{ style: "color: {{ page.c-title }}; font-size: 22px; margin: 0; padding-bottom: 5px;" } Parking
+
+            The Hilton has parking but it is quite expensive.
+            %a{ href: "https://www.google.com/maps/place/Central+Parking/@27.7683673,-82.6343616,16z/data=!4m5!1m2!2m1!1sparking!3m1!1s0x0:0xd4277564ec71a4c7", style: "color: {{ page.c-link }}; font-weight: bold;" } Central Parking
+            is a block away and
+            %a{ href: "http://tampaparking.spplus.com/St-Petersburg-230-1st-Street-South-Parking.html", style: "color: {{ page.c-link }}; font-weight: bold;" } their site
+            says they have a daily max of $4.
+
+          %td{ width: "{{ page.gutter }}" }
+
+        / Spacer
+        %tr
+          %td{ colspan: "3", height: "25" }
+
+
         %tr
           %td{ width: "{{ page.gutter }}" }
           %td{ align: "left" }
 
             %h1{ style: "color: {{ page.c-title }}; font-size: 22px; margin: 0; padding-bottom: 5px;" } Frontend Tooling Workshop
 
-            We're excited for next week's workshop, where Neil and Rob will share their take on modern development processes and tools. The workshop will be at the Hilton downtown.
+            The workshop will be at the Hilton downtown.
 
           %td{ width: "{{ page.gutter }}" }
 

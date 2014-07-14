@@ -1,0 +1,287 @@
+---
+layout: email
+title:  "Front-End Conf Extras"
+categories: promotional
+service: "mailchimp"
+status: "active"
+purpose: "A base starter file for transactional emails."
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f5f5f5"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+%style
+  a { color: #b51f24 !important; }
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "margin: 0; padding-bottom: 5px;" } Attendee Meetup Tonight!
+
+
+      %a{ href: "https://twitter.com/TheBeckyHamm", style: "color: {{ page.c-link }}; font-weight: bold;" } Becky Hamm
+      is heading up an attendee meetup tonight at 6:30 p.m.
+      %a{ href: "https://www.google.com/maps/preview?ie=UTF-8&fb=1&gl=us&cid=12456308244096257730&q=The+Ale+and+the+Witch&ei=e32-U4j0PNDLsQT2ooGADw&ved=0CIoBEPwSMAk", style: "color: {{ page.c-link }}; font-weight: bold;" } The Ale and the Witch
+      is where things will get started. We'll try to come out to say hi later in the night once we're caught up.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Rain
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "photo of banner", src: "http://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/825344c0-64aa-47b6-8962-b1456ce3b3e1.jpg", width: "580" }/
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /   Party Alternatives
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 24px; margin: 0; padding-bottom: 5px;" } The 600 Block
+
+      If you're into street art or art in general, you'll want to check out the 600 block, which is 6th St. If you wander the streets and alleys of Central and a few avenues north and south, there is lots of great work to see.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Receipts
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } Best Food Options
+      Depending on what you are looking for, St. Pete has some great food. Here the best choices (in our opinion).
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Pizza -
+      %a{ href: "https://www.google.com/maps/preview?ie=UTF-8&fb=1&gl=us&cid=13732187214235375498&q=Wood+Fired+Pizza+%26+Nightlife&ei=F4y-U5baAcP38AGS64HwAw&ved=0CL0BEPwSMA4", style: "color: {{ page.c-link }}; font-weight: bold;" } Woodfired Pizza
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Late Night Pizza -
+      %a{ href: "https://www.google.com/maps/place/Fortunato's+Italian+Market/@27.771385,-82.636607,17z/data=!3m1!4b1!4m2!3m1!1s0x88c2e19cb8eab6a3:0x39a1c40b7c4d33f8", style: "color: {{ page.c-link }}; font-weight: bold;" } Fortunato's Pizza
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Burgers -
+      %a{ href: "https://www.google.com/maps/place/the+Avenue+Eat%2FDrink/@27.77013,-82.637649,17z/data=!3m1!4b1!4m2!3m1!1s0x88c2e1835504910f:0x832030fc995c65f7", style: "color: {{ page.c-link }}; font-weight: bold;" } The Avenue
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Mexican -
+      %a{ href: "https://www.google.com/maps/place/Red+Mesa+Cantina/@27.769658,-82.636846,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xd641895264160389", style: "color: {{ page.c-link }}; font-weight: bold;" } Red Mesa Cantina
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Cheap beer and yummy food that is horrible for you -
+      %a{ href: "https://www.google.com/maps/place/Five+Bucks+Drinkery/@27.771337,-82.636428,17z/data=!3m1!4b1!4m2!3m1!1s0x88c2e19cbf40ce4d:0xbbaa4c6a7bdd44dd", style: "color: {{ page.c-link }}; font-weight: bold;" } Five Bucks
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Overall Fav -
+      %a{ href: "https://www.google.com/maps/place/The+Moon+Under+Water/@27.775854,-82.632265,17z/data=!3m1!4b1!4m2!3m1!1s0x88c2e17607255479:0xcf1eac14502f2b46", style: "color: {{ page.c-link }}; font-weight: bold;" } Moon Under Water
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      I'll tweet out any that people reply with that I missed.
+
+    %td{ width: "{{ page.gutter }}" }
+
+
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Gather
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } The Dali
+
+      If there is one thing to see in the area, it is the <a href="https://www.google.com/maps/place/The+Dali+Museum/@27.765573,-82.631531,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x273b948e64dcd305" style="color: {{ page.c-link }}; font-weight: bold;">Dali Musuem</a>. The work is fantastic and it is complimented by wonderful grounds and architecture.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } Bars
+
+      There are so many great bars. Depending on what style you're after, we suggest roaming Central Ave between Beach Drive and 4th St.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Suggestions
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding-bottom: 5px;" } Alternative Meetups
+
+      If anyone is interested in heading up a trek to the baseball game Friday night, please let me know.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      See you soon!
+      %br
+      Dan
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
