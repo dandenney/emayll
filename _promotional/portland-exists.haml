@@ -1,0 +1,361 @@
+---
+layout: email
+title:  "Portland Info"
+categories: promotional
+service: "mailchimp"
+status: "draft"
+purpose: "Portland info"
+tracker: ?utm_medium=email&utm_campaign=portland&utm_source=mandrill&utm_content=null
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f7f7f7"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#b51f24"
+btn-c-shadow: "#981a1e"
+---
+
+%style @media (max-width: 599px) { .s-pbm { padding-bottom: 16px; } }
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Content
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "illustration of stage and characters", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/a21dc772-328f-4971-9224-7443c2584974.jpg", style: "display: block;", width: "560" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "font-family: 'ChunkFive', Helvetica; font-weight: normal; margin: 0; padding: 0;" } Portland! August 22
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "10" }
+
+  / =====================================
+  /   Intro
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      We have the location and the speaker lineup for Friday, August 22nd. All we're missing now is you!
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Hotel Block Deadline
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-family: 'ChunkFive', Helvetica; font-size: 20px; font-weight: normal; margin: 0; padding: 0;" } Hotel Discount Deadline
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "10" }
+
+  / =====================================
+  /   Portland
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      / =====================================
+      /   Split Container
+      / =====================================
+      %table.flex-size{ width: "560", {{ page.tbl-base}} }
+
+        / =====================================
+        /   Split
+        / =====================================
+        %tr
+          %td{ align: "right" }
+
+            / =====================================
+            /   First Content Wrapper
+            / =====================================
+
+            %table.flex-size{ align: "right", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td
+
+                  The nice folks at the Portland Marriott City Center gave us a significant discount. Rooms are $189/night, but this is only good through July 25.
+
+              %tr
+                %td{ height: "15" }
+
+              %tr
+                %td.s-pbm
+
+                  / =====================================
+                  /   Button
+                  / =====================================
+
+                  %table.btn-full{ align: "center", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base }} }
+                    %tr
+                      %td{ bgcolor: "{{ page.btn-c-bg }}", style: "border-radius: 3px; box-shadow: 0 1px 0 {{ page.btn-c-shadow }};", valign: "top"}
+
+                        %a{ href: "http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Front-End%20Design%20Conference%5Epdxct%60fedfeda%60189.00%60USD%60false%608/20/14%608/24/14%6007/21/14&app=resvlink&stop_mobi=yes", style: "color: {{ page.btn-c-base }}; display: block; font-size: 14px; line-height: 3; text-align: center; text-decoration: none; text-transform: uppercase; "} Book a Room
+
+
+            / =====================================
+            /   Second Content Wrapper
+            / =====================================
+
+            %table.flex-size{ align: "left", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td{ align: "center" }
+
+                  %a{ href: "https://www.google.com/maps/dir/Gerding+Theater+At+The+Armory,+128+NW+11th+Ave,+Portland,+OR+97209/Portland+Marriott+City+Center,+520+SW+Broadway,+Portland,+OR+97205/@45.5219971,-122.6806852,18z/data=!4m14!4m13!1m5!1m1!1s0x5495a0a55ec959cb:0x77b4b4b2209a83f!2m2!1d-122.681683!2d45.524167!1m5!1m1!1s0x54950a045d7e06bb:0x9b44a08d5278e98d!2m2!1d-122.678998!2d45.520019!3e2" }
+                    %img{ alt: "map of walk to hotel", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/816c891e-0b86-48f1-8d6a-49220c7e906d.png", width: "260" }/
+
+
+        / Spacer
+        %tr
+          %td{ height: "25" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  / =====================================
+  /   Location Header
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-family: 'ChunkFive', Helvetica; font-size: 20px; font-weight: normal; margin: 0; padding: 0;" } Gerding Theater at the Armory
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "10" }
+
+  / =====================================
+  /   Theater photo and address
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      / =====================================
+      /   Split Container
+      / =====================================
+      %table.flex-size{ width: "560", {{ page.tbl-base}} }
+
+        / =====================================
+        /   Split
+        / =====================================
+        %tr
+          %td{ align: "left" }
+
+            / =====================================
+            /   First Content Wrapper
+            / =====================================
+
+            %table.flex-size{ align: "left", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td.s-pbm{ align: "center" }
+
+                  %img{ alt: "photo of the Armory interior", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/03ce143a-82fc-48a6-b5f1-453501e56e39.jpg", width: "260" }/
+
+            / =====================================
+            /   Second Content Wrapper
+            / =====================================
+
+            %table.flex-size{ align: "right", style: "{{ page.tbl-typeset }}", width: "260", {{ page.tbl-base}} }
+              %tr
+                %td
+
+                  128 NW Eleventh Avenue
+                  Portland, Oregon 97209 | 503-445-3700
+
+                  %br
+                  %br
+                  Cherrie found this awesome location. The building has great history and how they handle their shows is fantastic.
+
+        / Spacer
+        %tr
+          %td{ height: "25" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Speakers Title
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-family: 'ChunkFive', Helvetica; font-size: 20px; font-weight: normal; margin: 0; padding: 0;" } Speakers
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / =====================================
+  /   Speakers copy
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      We have an awesome lineup of speakers that will be touching on a wide range of front-end design and dev topics. There's a good mix of design thought and tech throughout the day. See the lineup on <a href="http://frontendconf.com" style="color: {{ page.c-link}};">frontendconf.com</a>.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Speakers Title
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-family: 'ChunkFive', Helvetica; font-size: 20px; font-weight: normal; margin: 0; padding: 0;" } Meetups on August 23
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / =====================================
+  /   Speakers copy
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      The conversations that happen outside of the presentations are often my favorite part of conferences. We're lining up meetups throughout Portland so that you can spend more time talking shop and exploring the city.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Join us!
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-family: 'ChunkFive', Helvetica; font-size: 20px; font-weight: normal; margin: 0; padding: 0;" } Join us!
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "10" }
+
+  / =====================================
+  /   joing us copy
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      The conf is $199 if you're ready to <a href="https://ti.to/dandenney/front-end-conf-portland" style="color: {{ page.c-link}};">register</a> or check out <a href="http://frontendconf.com" style="color: {{ page.c-link}};">frontendconf.com</a> for the speaker list and a few more details.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "10" }
+
+  / =====================================
+  /   joing us copy
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      If you'd like to share, we'd really appreciate it. I'm also giving away a little gift for shares this week: <a href="http://dandenney.com/posts/conferences/no-sleep-til-portland" style="color: {{ page.c-link}};">Details</a>
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Thank you,
+      %br
+      Dan Denney
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
