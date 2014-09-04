@@ -1,0 +1,238 @@
+---
+layout: email
+title:  "Front-End Conf Thank You"
+categories: promotional
+service: "mailchimp"
+status: "active"
+purpose: "A base starter file for transactional emails."
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f5f5f5"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+%style
+  a { color: #b51f24 !important; }
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "margin: 0; padding-bottom: 5px;" } Thank you!
+
+      Seriously, thank you for being the best conference attendees ever. Having run an event in another city, it was a very good reminder of just how lucky we were to have such awesome support here in Tampa Bay (and beyond). You all made the conf what it was.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "margin: 0; padding-bottom: 5px;" } Future event updates?
+
+      I'm going to start a separate list to hand off to whoever fires up the next event here in Tampa Bay. If you'd like to be notified when that happens, <a href="http://eepurl.com/2lKFD">pop in your email address</a>. (Don't worry, it'll only be to people that I trust.)
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "margin: 0; padding-bottom: 5px;" } Thanks for the Thanks
+
+      I have to give an extra thank you to everyone who participated in putting together <a href="http://frontendthanks.com/">frontendthanks.com</a>. It blew us away and made our year!
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "margin: 0; padding-bottom: 5px;" } Iron Yard Scholarship
+
+      Many of you got to meet the folks from The Iron Yard and they're going to be firing up classes soon. They're offering up a nice break for conf attendees, too. Eric Dodds sent over some details...
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ align: "center", colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "center" }
+
+      %img{ alt: "The Iron Yard", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/1e68c579-f608-4436-b101-8fe8b68d0f1f.png", width: "150" }/
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      For years Front End Design Conference and Dan Denney have been a central component the tech scene in Tampa Bay (and Florida as a whole!).
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Everyone gave us a warm welcome into the area at the conference this past year. As a thank you, we are offering all past attendees a $500 scholarship for our courses launching September 22nd in St. Petersburg and Orlando!
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      If you've ever thought about taking the leap and launching a new career programming, there has never been a better time.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Simply apply to the program and mention you heard about The Iron Yard through Front-End Conf. Here are links to more information and the applications:
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "20" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %ul
+        %li{ style: "padding-bottom: 10px;" }
+          Learn more about The Iron Yard:
+          %a{ href: "http://theironyard.com", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.com
+        %li{ style: "padding-bottom: 10px;" }
+          Learn more about Front End Engineering:
+          %a{ href: "theironyard.com/academy/front-end-engineering/", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.com/academy/front-end-engineering/
+        %li{ style: "padding-bottom: 10px;" }
+          Apply to the Tampa Bay program:
+          %a{ href: "https://theironyard.typeform.com/to/hmT9NZ", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.typeform.com/to/hmT9NZ
+        %li{ style: "padding-bottom: 10px;" }
+          Apply to the Orlando program:
+          %a{ href: "https://theironyard.typeform.com/to/X5SCGY", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.typeform.com/to/X5SCGY
+        %li{ style: "padding-bottom: 10px;" }
+          Learn more about Rails Engineering:
+          %a{ href: "http://theironyard.com/academy/rails-engineering", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.com/academy/rails-engineering/
+        %li{ style: "padding-bottom: 10px;" }
+          Apply to the Tampa Bay program:
+          %a{ href: "https://theironyard.typeform.com/to/PfCfAp/{{ page.tracker }}", style: "color: {{ page.c-link }}; font-weight: bold;" } theironyard.typeform.com/to/PfCfAp
+
+    %td{ width: "{{ page.gutter }}" }
+
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Thank you,
+      %br
+      Dan
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}

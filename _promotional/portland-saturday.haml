@@ -1,0 +1,107 @@
+---
+layout: email
+title:  "Portland Saturday"
+categories: promotional
+service: "mailchimp"
+status: "draft"
+purpose: "Portland Saturday"
+tracker: ?utm_medium=email&utm_campaign=portland&utm_source=mandrill&utm_content=null
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f7f7f7"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#b51f24"
+btn-c-shadow: "#981a1e"
+---
+
+%style @media (max-width: 599px) { .s-pbm { padding-bottom: 16px; } }
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+/ =====================================
+/   Content Name
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Content
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "illustration of stage and characters", src: "https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/a21dc772-328f-4971-9224-7443c2584974.jpg", style: "display: block;", width: "560" }
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "15" }
+
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h2{ style: "color: {{ page.c-title }}; font-size: 20px; margin: 0; padding: 0;" } Saturday Events
+      %ul{ style: "margin-left: 0; padding-left: 0;"}
+        %li.mtl{ style: "list-style: none; margin-left: 0; padding-left: 0; border-top: 1px solid #f5f5f5; padding-bottom: 20px; padding-top: 20px;"}
+          %h4{ style: "color: {{ page.c-title }}; font-size: 16px; margin: 0; padding: 0;" } 10am-12pm
+          Saturday Morning Market
+          %p Let's hang out and enjoy the offerings of the local community.
+          %a{:href => "https://www.google.com/maps/preview?ll=45.522489,-122.669734&z=15&t=m&hl=en-US&gl=US&mapclient=embed&cid=6771846169323495190", style: "color: #b51f24;"} 2 SW Naito Parkway, Portland, OR 97204
+        %li.bdrt.mtl.ptl{ style: "list-style: none; margin-left: 0; padding-left: 0; border-top: 1px solid #f5f5f5; padding-bottom: 20px; padding-top: 20px;"}
+          %h4{ style: "color: {{ page.c-title }}; font-size: 16px; margin: 0; padding: 0;" } 12pm-2pm
+          Lettering Jam Session at Rontoms
+          %p
+            Want to jam on some lettering? We're going to get some supplies and meet up for a couple hours. Nathan Yoder aka
+            = succeed "," do
+              %a{:href => "https://twitter.com/NathanYoder", style: "color: #b51f24;"} @NathanYoder
+          %a{:href => "http://goo.gl/maps/VnU39", style: "color: #b51f24;"} 600 E Burnside St, Portland, OR 97214
+        %li.bdrt.mtl.ptl{ style: "list-style: none; margin-left: 0; padding-left: 0; border-top: 1px solid #f5f5f5; padding-bottom: 20px; padding-top: 20px;"}
+          %h4{ style: "color: {{ page.c-title }}; font-size: 16px; margin: 0; padding: 0;" } 2:30pm - ?
+          %p
+            Marquam Nature Park Hike
+
+            Starts at the Marquam Nature Park Shelter Trailhead
+            3.3 mile out and back to the summit of Mount Crest where you can overlook the city.
+          %a{:href => "https://www.google.com/maps/place/Marquam+Nature+Park/@45.4940298,-122.691514,14z/data=!3m1!4b1!4m2!3m1!1s0x54950a4ee2682a43:0x31c35776141af65d", style: "color: #b51f24;"} SW Marquam St Portland, OR 97201
+        %li.bdrt.mtl.ptl{ style: "list-style: none; margin-left: 0; padding-left: 0; border-top: 1px solid #f5f5f5; padding-bottom: 20px; padding-top: 20px;"}
+          %h4{ style: "color: {{ page.c-title }}; font-size: 16px; margin: 0; padding: 0;" } Dinner and drinks?
+          %p No direct plans after the hike, so please tweet us if you have something going on. We'll tweet out wherever we end up.
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "40" }
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
