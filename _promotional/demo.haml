@@ -1,0 +1,119 @@
+---
+layout: email
+title:  "Demo"
+categories: promotional
+service: "none"
+status: "inactive"
+purpose: "A base starter file for transactional emails."
+tracker: ?utm_medium=email&utm_campaign=NAME_OF_THIS_THING_NOT_IN_CAPS&utm_source=mandrill&utm_content=null
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#b51f24"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#228b9b"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+// /images/demo.gif
+
+/ =====================================
+/
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Content
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %img{ alt: "demo gif", src: "/images/demo.gif", width: "560" }/
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      %h1{ style: "color: {{ page.c-title }}; font-size: 22px; margin: 0; padding: 0;" } Header
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "5" }
+
+  / =====================================
+  /
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Copy
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / =====================================
+  /
+  / =====================================
+
+  / =====================================
+  /   Closing
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      Thanks,
+      %br
+      Gregg at Code School
+
+    %td{ width: "{{ page.gutter }}" }
+
+
+
+
+
+
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
