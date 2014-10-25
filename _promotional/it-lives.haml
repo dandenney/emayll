@@ -1,0 +1,94 @@
+---
+layout: email
+title:  "Front-End Conf Lives!"
+categories: promotional
+service: "mailchimp"
+status: "active"
+purpose: "A base starter file for transactional emails."
+
+hdr-c-base: "#37a381"
+hdr-c-bg: "#f5f5f5"
+hdr-c-link: "#0b684d"
+hdr-border: "border-bottom: 1px solid #f5f5f5;"
+
+ftr-c-base: "#d4d4d4"
+ftr-c-bg: "#f7f7f7"
+ftr-c-link: "#a1a1a1"
+ftr-border: "border-top: 1px solid #f5f5f5;"
+
+tbl-base: "border: '0', cellpadding: '0', cellspacing: '0'"
+tbl-typeset: "font-family: 'Museo Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; font-weight: 300; line-height: 1.4;"
+c-bg: "#fefefe"
+c-base: "#252525"
+c-link: "#b51f24"
+c-title: "#3f4944"
+gutter: "20"
+
+btn-c-base: "#ffffff"
+btn-c-bg: "#999999"
+btn-c-shadow: "#777777"
+---
+
+/ =====================================
+/   Header Includes
+/ =====================================
+
+{% include email-header.haml %}
+
+
+/ =====================================
+/   Content
+/ =====================================
+
+%table.flex-size{ style: "color: {{ page.c-base }}; {{ page.tbl-typeset }}", width: "600", {{ page.tbl-base}} }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+  / =====================================
+  /   Content
+  / =====================================
+  %tr
+    %td{ width: "{{ page.gutter }}" }
+    %td{ align: "left" }
+
+      <h1>Front-End Conf Lives!</h1>
+      <style>
+      h1, h2, h3, h4 { color: #b51f24; }
+      </style>
+      <p style="text-align: center;">
+      <img src="https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/cdc80069-672f-4b1f-ba9e-f4f828ab5325.jpg" width="400">
+      </p>
+      <p>
+      The decision to stop running Front-End Conf was a very tough one and the reaction of the people both in St. Petersburg and Portland made it even more hard. Luckily, I knew it was going to be tough and I decided to call out a few of my friends. The awesome crew from <a href="http://unmatchedstyle.com/" style="color: #b51f24;">Unmatched Style</a>, who run <a href="http://convergese.com/" style="color: #b51f24;">ConvergeSE</a>, <a href="http://convergefl.com/" style="color: #b51f24;">ConvergeFL</a>, <a href="http://convergerva.com/" style="color: #b51f24;">ConvergeRVA</a>, and the <a href="https://bdconf.com/" style="color: #b51f24;">Breaking Development confs</a> (amongst other things) came up on stage to give me a gift. I returned the favor by calling them out on the possibility of running a conf in St. Pete because that's the kind of thing friends can get away with. We've been chatting since and they're officially taking over!
+      </p>
+      <p class="center">
+      <img src="https://gallery.mailchimp.com/040435af75d83823cc94edc9b/images/5f18044e-0800-4a6e-98e0-a9a0a66770f1.jpg" width="100%">
+      </p>
+      <h2>The Best Possible Outcome</h2>
+      <p>
+      Front-End Conf will continue on and will be in St. Petersburg in 2015! They will be handling all of the logistics and running the conf, which is the part Cherrie and I were struggling to keep up with. They're pros and I've learned so much from them as we've been sharing our conf running experiences over the past 6 years. (We missed each other's first confs, but I've traveled up for every ConvergeSE since 2010 and they've come down to St. Pete for every one since then as well.) The best part is that they still want us to be involved! So, we'll be helping out in every way that we can to work on the conf with friends to continue celebrating with this awesome community.
+      </p>
+      <h2>Stay in the loop!</h2>
+      <p>
+      We have a <a href="http://frontendconf.com" style="color: #b51f24;">new landing page</a> and you're on this list so you'll get the latest news unless you unsubscribe.
+      </p>
+
+      <p>Thank you,<br />Dan</p>
+
+    %td{ width: "{{ page.gutter }}" }
+
+  / Spacer
+  %tr
+    %td{ colspan: "3", height: "25" }
+
+
+
+
+
+/ =====================================
+/   Footer Include
+/ =====================================
+
+{% include email-footer.haml %}
