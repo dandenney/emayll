@@ -3,6 +3,10 @@ emayll
 
 A Jekyll instance for organizing and building HTML emails offline using Haml
 
+## Deprecated
+
+I learned a lot putting this together but I've moved on. I don't want to remove it in case people are using this, but I'll be sharing my Middleman version instead.
+
 ## Dependencies
 
 - [Jekyll 2.0](https://github.com/jekyll/jekyll)
